@@ -1,8 +1,10 @@
-# Customized for kadai 3
-# kadai-a
-# kadai-b
-# kadai-c
-# kadai-d
+# Customized for kadai 4
+kadai-a/udpechoclient
+kadai-a/udpechoserver
+kadai-b/tcpechoclient
+kadai-b/tcpechoserver[1,2]
+kadai-c/iperfclient
+kadai-c/iperfserver
 
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
