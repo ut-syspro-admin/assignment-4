@@ -13,7 +13,7 @@ Socket & network.
 
 - Slide: [here]() (ECCS email required) 
 - Date assigned: ***2023/05/08***
-- Date due: ***2023/05/22*** (tentative)
+- Date due: ***2023/05/22 23:59*** (tentative)
 
 ## Notes
 

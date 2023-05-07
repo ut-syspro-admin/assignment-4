@@ -92,14 +92,14 @@ kadai-b() {
 
         for bin in $client $server1 $server2; do
             if [ -f $bin ]; then continue; fi
-            warn "kadai-a: Failed to generate the binary($bin) with '$ make $client $server1 $server2'"
+            warn "kadai-b: Failed to generate the binary($bin) with '$ make $client $server1 $server2'"
         done
 
-        if [ ! check_tcp $client $server1 ]; then
+        if ! check-tcp $client $server1; then
             warn "kadai-b: diff detected between client input and output (tcpechoserver1)"
         fi
 
-        if [ ! check_tcp $client $server2 ]; then
+        if ! check-tcp $client $server2; then
             warn "kadai-b: diff detected between client input and output (tcpechoserver2)"
         fi
 
@@ -156,28 +156,27 @@ kadai-c() {
         cp -r kadai-c $dir
         pushd $dir/kadai-c > /dev/null 2>&1
 
-        local client=iperfclient
-        local server=iperfserver
+        local client=iperfc
+        local server=iperfs
 
-        if [ ! -f Makefile]; then
-            warn "kadai-b: Missing Makefile"
+        if [ ! -f Makefile ]; then
+            warn "kadai-c: Missing Makefile"
         fi
 
         make $client $server > /dev/null 2>&1
 
         for bin in $client $server; do
             if [ -f $bin ]; then continue; fi
-            warn "kadai-a: Failed to generate the binary($bin) with '$ make $client $server'"
+            warn "kadai-c: Failed to generate the binary($bin) with '$ make $client $server'"
         done
 
         local port=$(($RANDOM % 100 + 25555))
         ./$server $port > /dev/null 2>&1 &
         sleep 0.2
+
         iperfc_result=$(./$client 127.0.0.1 $port)
         if [ $(echo $iperfc_result | wc -l) -ne 1 ]; then
             warn "kadai-c: the output must be one line and the format is: (data size) (elapsed time) (throughput)"
-        else
-            echo "kadai-c: iprefc result: $iperfc_result"
         fi
 
         disown -a
