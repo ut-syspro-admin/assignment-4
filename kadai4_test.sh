@@ -37,7 +37,7 @@ kadai-a() {
 
         local port=$(($RANDOM % 100 + 25555))
 
-        man 2 open > __before.txt
+        man open > __before.txt
         ./$server $port > /dev/null 2>&1 &
         sleep 0.2
         ./$client 127.0.0.1 $port < __before.txt > __after.txt &
