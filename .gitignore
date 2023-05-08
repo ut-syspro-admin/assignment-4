@@ -3,8 +3,8 @@ kadai-a/udpechoclient
 kadai-a/udpechoserver
 kadai-b/tcpechoclient
 kadai-b/tcpechoserver[1,2]
-kadai-c/iperfclient
-kadai-c/iperfserver
+kadai-c/iperfc
+kadai-c/iperfs
 
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
