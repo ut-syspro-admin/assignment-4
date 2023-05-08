@@ -11,7 +11,7 @@ Socket & network.
 
 ## Assignment
 
-- Slide: [here]() (ECCS email required) 
+- Slide: [here](https://docs.google.com/presentation/d/1WTUMLxJMoJqqwLHtRMbkgXS-OLHpuDZsNM1jJCyvuRU/edit?usp=sharing) (ECCS email required) 
 - Date assigned: ***2023/05/08***
 - Date due: ***2023/05/22 23:59*** (tentative)
 
