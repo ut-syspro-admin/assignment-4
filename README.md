@@ -24,7 +24,7 @@ Socket & network.
 1. Be punctual
     - Overdue submissions might lead to ***penalty points***.
     - Inexorable reasons are allowed sometimes.
-    - Check [***here***](https://github.com/ut-syspro-admin/assignment-3) for the latest deadline.
+    - Check [***here***](https://github.com/ut-syspro-admin/assignment-4) for the latest deadline.
 1. Be active
     - Complete as many assignments as possible.
     - ***On-site attendance*** is recommended.
